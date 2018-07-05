@@ -735,6 +735,11 @@ public class BitcoinJSONRPCClient implements BitcoindRpcClient {
       return mapStr(m, "to");
     }
 
+    @Override
+    public boolean generated() {
+      return mapBool(m, "generated");
+    }
+
     private RawTransaction raw = null;
 
     @Override
@@ -743,7 +748,7 @@ public class BitcoinJSONRPCClient implements BitcoindRpcClient {
         try {
           raw = getRawTransaction(txId());
         } catch (GenericRpcException ex) {
-          throw new RuntimeException(ex);
+          logger.warning(ex.getMessage());
         }
       return raw;
     }
@@ -1172,7 +1177,7 @@ public class BitcoinJSONRPCClient implements BitcoindRpcClient {
       }
 
       @Override
-      public int vout() {
+      public Integer vout() {
         return mapInt("vout");
       }
 
@@ -1644,7 +1649,7 @@ public class BitcoinJSONRPCClient implements BitcoindRpcClient {
     }
 
     @Override
-    public int vout() {
+    public Integer vout() {
       return mapInt(m, "vout");
     }
 
