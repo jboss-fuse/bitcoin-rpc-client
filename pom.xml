@@ -6,7 +6,7 @@
   <artifactId>JavaBitcoindRpcClient</artifactId>
   <packaging>jar</packaging>
   
-  <version>0.17.0-SNAPSHOT</version>
+  <version>0.17.0.Alpha1</version>
   
   <name>Java Bitcoind RPC Client</name>
   <description>A lightweight Java bitcoin JSON-RPC client binding</description>
@@ -30,8 +30,8 @@
     <developer>
       <name>Alessandro Polverini</name>
       <email>polverini@gmail.com</email>
-      <organization></organization>
-      <organizationUrl></organizationUrl>
+      <organization />
+      <organizationUrl />
       <roles>
         <role>developer</role>
       </roles>
@@ -58,6 +58,7 @@
     <connection>scm:git:git@github.com:tdiesler/JavaBitcoindRpcClient.git</connection>
     <developerConnection>scm:git:git@github.com:tdiesler/JavaBitcoindRpcClient.git</developerConnection>
     <url>git@github.com:tdiesler/JavaBitcoindRpcClient.git</url>
+    <tag>0.17.0.Alpha1</tag>
   </scm>
 
   <distributionManagement>
